@@ -12,7 +12,7 @@ load_dotenv()
 
 api = Scraper()
 token = os.getenv("TOKEN")
-BOT_USERNAME = '@ManukaAI_Bot'
+BOT_USERNAME = '@TiktokGeppy_bot'
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Support me on : https://www.paypal.me/ardha27')
@@ -51,7 +51,7 @@ async def hybrid_parsing(url: str) -> dict:
         else:
             print(f"Failed to download MP4. Status code: {response_video_hq.status_code}")
         
-    except Exception as e:
+    except Exception as e:hi send your link
         print(f'An error occurred: {str(e)}')
         return None
 
